@@ -1,7 +1,7 @@
 import { Button, TextField, Link as MuiLink } from "@mui/material";
 import { Link } from "react-router-dom";
 import React from "react";
-const LoginForm: React.FC = () => {
+const SignUpForm: React.FC = () => {
   return (
     <div className="flex justify-center items-center flex-col h-screen gap-8">
       <h2 className="text-6xl">Crypto States</h2>
@@ -13,14 +13,14 @@ const LoginForm: React.FC = () => {
           type="password"
           required
         />
-        <Link to="/singup" className="justify-self-start-start mt-2">
-          <MuiLink>Sign Up</MuiLink>
+        <Link to="/login" className="justify-self-start-start mt-2">
+          <MuiLink>login</MuiLink>
         </Link>
       </div>
       <Button variant="contained" className="w-80">
-        <span className="p-1">Login</span>
+        <span className="p-1">Sign up</span>
       </Button>
     </div>
   );
 };
-export { LoginForm };
+export { SignUpForm };
